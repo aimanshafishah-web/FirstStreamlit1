@@ -16,5 +16,5 @@ if Login:
     st.write(f"Your gender is {Gender}")
     st.write(f"Yur subjects are {subject}")
     st.divider()
-    st.image(r"C:\Users\user\Downloads\rose.webp")
+    #st.image(r"C:\Users\user\Downloads\rose.webp")
     st.image(os.path.join(os.getcwd(),"Static","Tulip.webp"),width=100)
