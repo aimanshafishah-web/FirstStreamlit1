@@ -1,0 +1,20 @@
+import streamlit as st
+import os
+st.title("Flowers For Life")
+st.header("About You")
+Customer=st.text_input("Enter Your Name")
+Age=st.number_input("Enter Your age",min_value=18,max_value=100,step=5)
+st.write(f"Your name is {Customer}")
+st.write(f"Your age is {Age}")
+Gender=st.selectbox("Gender",["male","female"])
+subject=st.multiselect("Select your Class",{"Python","MySQL","StreamLit","All"})
+Login=st.button("log in")
+if Login:
+    st.success("Form submitted Successfully")
+    st.write(f"Your name is {Customer}")
+    st.write(f"Your age is {Age}")
+    st.write(f"Your gender is {Gender}")
+    st.write(f"Yur subjects are {subject}")
+    st.divider()
+    st.image(r"C:\Users\user\Downloads\rose.webp")
+    st.image(os.path.join(os.getcwd(),"Static","Tulip.webp"),width=100)
